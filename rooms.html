@@ -1,0 +1,50 @@
+<!-- rooms.html -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Quartos — Hotel NoX</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html">Hotel<span class="accent">NoX</span></a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="reserve.html">Reservar</a>
+<a href="login.html" id="rooms-login">Entrar</a>
+</nav>
+</div>
+</header>
+
+
+<main>
+<section class="container">
+<div class="filters">
+<input id="filter-search" placeholder="Pesquisar por nome, tag, comodidade" />
+<select id="filter-type"><option value="all">Todos</option><option value="luxo">Luxo</option><option value="economico">Econômico</option></select>
+<button id="clear-filters" class="btn">Limpar</button>
+</div>
+
+
+<div id="rooms-list" class="grid rooms-grid">
+<!-- rooms injected by JS -->
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<div>© <span id="year2"></span> Hotel NoX</div>
+</div>
+</footer>
+
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

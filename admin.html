@@ -1,0 +1,40 @@
+<!-- admin.html (admin requires login; better UI) -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Admin — Hotel NoX</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html">Hotel<span class="accent">NoX</span></a>
+<nav class="nav">
+<a href="rooms.html">Quartos</a>
+<a href="reserve.html">Reservar</a>
+<a href="login.html" id="admin-login-link">Entrar</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container admin-page">
+<h2>Painel Administrativo</h2>
+<div id="admin-area">
+<!-- if not authenticated, show login prompt -->
+</div>
+</main>
+
+
+<footer class="site-footer">
+<div class="container footer-inner">© <span id="year5"></span> Hotel NoX</div>
+</footer>
+
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!-- room.html (room detail with carousel & zoom) -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Quarto — Hotel NoX</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html">Hotel<span class="accent">NoX</span></a>
+<nav class="nav">
+<a href="rooms.html">Quartos</a>
+<a href="reserve.html">Reservar</a>
+<a href="login.html">Entrar</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container room-detail">
+<div id="room-content">
+<!-- injected by JS: images (carousel), description, amenities, price -->
+</div>
+</main>
+
+
+<!-- Zoom modal -->
+<div id="zoom-modal" class="zoom-modal" aria-hidden="true">
+<button class="zoom-close" aria-label="Fechar">✕</button>
+<img id="zoom-img" src="" alt="Zoomed image">
+</div>
+
+
+<footer class="site-footer">
+<div class="container footer-inner">© <span id="year3"></span> Hotel NoX</div>
+</footer>
+
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

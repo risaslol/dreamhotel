@@ -1,0 +1,46 @@
+<!-- login.html -->
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html">Hotel<span class="accent">NoX</span></a>
+</div>
+</header>
+
+
+<main class="container auth-page">
+<h2>Entrar</h2>
+<div class="auth-grid">
+<form id="login-form" class="auth-form">
+<label>Email
+<input type="email" id="login-email" required>
+</label>
+<label>Senha
+<input type="password" id="login-password" required>
+</label>
+<div class="actions">
+<button class="btn btn-primary" type="submit">Entrar</button>
+</div>
+<div id="auth-msg" class="muted"></div>
+</form>
+
+
+<div class="auth-info">
+<h4>Conta de teste</h4>
+<p>Admin: admin@hotel.test / senha: admin123</p>
+<p>Hóspede: user@hotel.test / senha: user123</p>
+</div>
+</div>
+</main>
+
+
+<footer class="site-footer">
+<div class="container footer-inner">© <span id="year6"></span> Hotel NoX</div>
+</footer>
+
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

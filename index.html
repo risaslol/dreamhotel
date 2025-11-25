@@ -1,0 +1,104 @@
+
+<!-- index.html -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hotel NoX — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <meta name="theme-color" content="#111827">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Hotel<span class="accent">NoX</span></a>
+      <nav class="nav">
+        <a href="rooms.html">Quartos</a>
+        <a href="reserve.html">Reservar</a>
+        <a href="#menu" id="menu-open">Cardápio</a>
+        <a href="terms.html">Termos</a>
+        <a href="privacy.html">Privacidade</a>
+        <a id="nav-login" href="login.html">Entrar</a>
+        <a class="btn btn-primary" id="nav-admin" href="admin.html">Admin</a>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1>Bem-vindo ao Hotel NoX</h1>
+          <p class="lead">Design moderno, conforto e uma experiência feita sob medida para você.</p>
+          <a class="btn btn-cta" href="rooms.html">Ver Quartos</a>
+        </div>
+        <div class="hero-right">
+          <div class="card-search">
+            <h3>Busca rápida</h3>
+            <form id="quick-search">
+              <label>Entrada
+                <input type="date" id="checkin" required>
+              </label>
+              <label>Saída
+                <input type="date" id="checkout" required>
+              </label>
+              <label>Hóspedes
+                <select id="guests"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+              </label>
+              <button class="btn btn-primary" type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container features">
+      <div class="feature">
+        <h4>Limpeza profissional</h4>
+        <p>Protocolos rigorosos e certificação de higiene.</p>
+      </div>
+      <div class="feature">
+        <h4>Localização privilegiada</h4>
+        <p>Perto das melhores atrações e com vista inesquecível.</p>
+      </div>
+      <div class="feature">
+        <h4>Serviço 24/7</h4>
+        <p>Atendimento bilíngue e suporte sempre disponível.</p>
+      </div>
+    </section>
+
+    <section id="menu" class="container menu-section">
+      <h2>Cardápio do Hotel</h2>
+      <div class="menu-grid">
+        <div class="menu-card"><h5>Café da Manhã Premium</h5><p>Panquecas, frutas, ovos e sucos naturais — R$35</p></div>
+        <div class="menu-card"><h5>Hambúrguer Artesanal</h5><p>Carne 200g, batata rústica — R$42</p></div>
+        <div class="menu-card"><h5>Prato Executivo</h5><p>Peito de frango grelhado + acompanhamentos — R$39</p></div>
+      </div>
+    </section>
+
+    <section class="container testimonials">
+      <h2>O que nossos hóspedes dizem</h2>
+      <div class="testi-grid">
+        <blockquote>Ótima experiência! Atendimento impecável. — Marina</blockquote>
+        <blockquote>Quarto com vista maravilhosa. Volto sempre. — Lucas</blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Hotel NoX — Todos os direitos reservados</div>
+      <div class="footer-links">
+        <a href="terms.html">Termos</a>
+        <a href="privacy.html">Privacidade</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
